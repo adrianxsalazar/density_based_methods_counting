@@ -3,9 +3,9 @@
 <img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/output.png" alt="detection sample">
 </p>
 
-<embed src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/can.pdf"/>
+<img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/can.png"/>
 
-<embed src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/crsnet.pdf" />
+<img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/crsnet.png" />
 ```
 
 $
