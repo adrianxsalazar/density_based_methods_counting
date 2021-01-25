@@ -1,5 +1,12 @@
 This repository contains the code to run several density-based counting approaches. In our implementation, we are focused on applications in agriculture. The goal of this implementation is to, in a few steps, run multiple density-based counting approaches on several datasets. So, practitioners can further develop these techniques.
 
+What can you do with this implementation?
+<ul>
+ <li>Train density-based models with your custom datasets with just a few commands.</li>
+ <li>Set up the characteristic of the model with few commands for exhaustive search.</li>
+ <li>Test your model with just a few commands.</li>
+</ul>
+
 <p class="aligncenter">
 <img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/output.png" alt="detection sample">
 </p>
@@ -13,12 +20,6 @@ Currently, we covered the following methodologies, and we will add more density-
  <li>Test your model with just a few commands.</li>
 </ul>
 
-What can you do with this implementation?
-<ul>
- <li>Train object detection models with your custom datasets.</li>
- <li>Set up the characteristic of the model with few commands. We cover elements such as the rpn anchor size, stopping criteria, base-model used for training, etc.</li>
- <li>Test your model with just a few commands.</li>
-</ul>
 
 
 <img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/can.png"/>
