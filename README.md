@@ -92,34 +92,27 @@ project                                           #Project folder. Typically we 
 
 ```
 
+<h3> Running the models. </h3>
 
-To run the presented implementations, it is nece
+ For training, all the implemented density-based methods require of three parameters; a first parameter indicating the path of a \textit{.json} that indicates the location of the ground truth training images, the second parameter is another \textit{.json} that does the same as the previous one but indicates the location of the validation items, and the last element is a path indicating the folder where the trained models are saved. The following example trains a CSRNet model on a dataset called "dataset_A"
 
 ```
 
-$
+$ python code/models/CSRNet/train.py "./datasets/dataset_A/density_train_list.json"  "./datasets/dataset_A/density_val_list.json" "./saved_models/CSRNet/dataset_A/"
+
+
+```
+
+The following example trains a can model
+```
+
+$ python code/models/can/train.py  "./datasets/dataset_A/density_train_list.json"  "./datasets/dataset_A/density_val_list.json" "./saved_models/can/global-wheat-detection/"
+
 
 ```
 
 <h3> Code to prepare the .json file to train your models </h3>
 
-Below, you can find an example of the ".json" file that we need. This file contains the paths of the images we will use for training, testing, and validation. There is a .json for each set.
-
-```
-
-$
-
-```
-
-We included the file "json_creator.py" under the "code/utils/" directory. This code takes all the images you want to use to create the validation, training, and testing files. The following command runs this code.
-
-```
-
-$
-
-```
-
-The parameter "-"  
 
 
 <h3> Testing the model </h3>
