@@ -15,10 +15,10 @@ What can you do with this implementation?
 Currently, we covered the following methodologies. We will add more density-based counting methods to this repo.
 
 <ul>
- <li>Context aware networks (CAN). Based on the paper </li>
- <li>CSRNet. Based on the paper </li>
- <li>Bayesian-Crowd-Counting (Soon). Based on the paper</li>
- <li>Multi column crowd counting (MCNN) (Soon). Based on the paper <\li>
+ <li>Context aware networks (CAN). Based on the paper "Context-Aware Crowd Counting". </li>
+ <li>CSRNet. Based on the paper "CSRNet: Dilated Convolutional Neural Networks for Understanding the Highly Congested Scenes".</li>
+ <li>Bayesian-Crowd-Counting (Soon). Based on the paper "Bayesian Loss for Crowd Count Estimation with Point Supervision".</li>
+ <li>Multi column crowd counting (MCNN) (Soon). Based on the paper "Single-Image Crowd Counting via Multi-Column Convolutional Neural Network".<\li>
 </ul>
 
 <img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/can.png"/>
