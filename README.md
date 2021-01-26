@@ -103,7 +103,7 @@ $ python code/models/CSRNet/train.py "./datasets/dataset_A/density_train_list.js
 
 ```
 
-The following example trains a can model
+The following example trains a "CAN" model
 
 ```
 
