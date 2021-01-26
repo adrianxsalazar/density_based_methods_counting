@@ -18,10 +18,10 @@ Currently, we covered the following methodologies. We will add more density-base
  <li>Context aware networks (CAN). Based on the paper "Context-Aware Crowd Counting". </li>
  <li>CSRNet. Based on the paper "CSRNet: Dilated Convolutional Neural Networks for Understanding the Highly Congested Scenes".</li>
  <li>Bayesian-Crowd-Counting (Soon). Based on the paper "Bayesian Loss for Crowd Count Estimation with Point Supervision".</li>
- <li> Multi column crowd counting (MCNN) (Soon). Based on the paper "Single-Image Crowd Counting via Multi-Column Convolutional Neural Network". <\li>
+ <li> Multi column crowd counting (MCNN) (Soon). Based on the paper "Single-Image Crowd Counting via Multi-Column Convolutional Neural Network". </li>
 </ul>
 
-We try to cover representative approaches from each family. We have covered techniques from the single-column and multicolumn families in density based crowd counting. Multicolumn methods such as "can" extract information at multiple levels by using neural structures of different sizes, to then combine them for the sake of counting. Below, you can find an example of can.
+We try to cover representative approaches from each family. We have covered techniques from the single-column and multicolumn families in density based crowd counting. Multicolumn methods such as "CAN" extract information at multiple levels by using neural structures of different sizes, to then combine them for the sake of counting. Below, you can find an example of "CAN".
 <img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/can.png"/>
 
 Also, we have covered single column structures such as CSRNet. These approaches use long neural structures to extract the information required for counting.
