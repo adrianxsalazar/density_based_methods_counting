@@ -94,7 +94,7 @@ project                                           #Project folder. Typically we 
 
 <h3> Running the models. </h3>
 
- For training, all the implemented density-based methods require of three parameters; a first parameter indicating the path of a \textit{.json} that indicates the location of the ground truth training images, the second parameter is another \textit{.json} that does the same as the previous one but indicates the location of the validation items, and the last element is a path indicating the folder where the trained models are saved. The following example trains a CSRNet model on a dataset called "dataset_A"
+ For training, all the implemented density-based methods require of three parameters; a first parameter indicating the path of a ".json" that indicates the location of the ground truth training images, the second parameter is another ".json" that does the same as the previous one but indicates the location of the validation items, and the last element is a path indicating the folder where the trained models are saved. The following example trains a CSRNet model on a dataset called "dataset_A"
 
 ```
 
