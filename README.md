@@ -21,11 +21,13 @@ Currently, we covered the following methodologies. We will add more density-base
  <li>Multi column crowd counting (MCNN) (Soon). Based on the paper "Single-Image Crowd Counting via Multi-Column Convolutional Neural Network".<\li>
 </ul>
 
+We try to cover representative approaches from each family. We have covered techniques from the single-column and multicolumn families in density based crowd counting. Multicolumn methods such as "can" extract information at multiple levels by using neural structures of different sizes, to then combine them for the sake of counting. Below, you can find an example of can.
 <img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/can.png"/>
 
+Also, we have covered single column structures such as CSRNet. These approaches use long neural structures to extract the information required for counting.
 <img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/crsnet.png" />
 
-Here
+
 <h4> Directory structure. </h4>
 
 To run the presented implementations, we have to set up the following directory structure in our project directory.
