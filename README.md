@@ -23,7 +23,9 @@ Currently, we covered the following methodologies. We will add more density-base
 
 <h4> Directory structure. </h4>
 
-To run the presented implementations, we have to set up the following directory structure in our project directory. Then, to run our approaches with custom datasets will be as simple as writing a short command.
+To run the presented implementations, we have to set up the following directory structure in our project directory.
+It is easy to do so. You only need to download this repository and place your dataset in the correct directory.
+Then, running our approaches with custom datasets will be as simple as using a couple of short commands.
 
 ```
 
@@ -31,46 +33,55 @@ project                                           #Project folder. Typically we 
 │   README.md                                     #Readme of the project.
 │
 └───code                                          #Folder where we store the code.
-│   │   ...
-│   └───can                                       #Folder that contains the code to run can.
-│   |   │   train.py                              #File with the code to train a can model.
-│   |   │   test.py                               #File with the code to test a can model.
-|   |   |   dataset.py                            #File with the code with the data loader. We do not use this file directly.
-|   |   |   image.py                              #This code contains is in charge of modifying the images we use. We do not use this file directly.
-|   |   |   utils.py                              #Several tools we use in the training process. We do not use this file directly.
-|   |   |   model.py                              #The code contains the model. We do not use this file directly.
-|   |   
-|   └───CSRNet                                    #Folder that contains the code to run CSRNet.
-│   |   │   train.py                              #faster rcnn training code.
-│   |   │   test.py                               #faster rcnn testing code.
-|   |   |   dataset.py                            #K-means approach to choose anchor sizes.
-|   |   |   image.py                              #K-means approach to choose anchor sizes.
-|   |   |   utils.py                              #K-means approach to choose anchor sizes.
-|   |   |   model.py                              #Plot the results of the trained models.
-|   |   
-|   └───more models                               #
+│   │
+|   └───models
+|   │   └───can                                   #Folder that contains the code to run can.
+|   │   |   │   train.py                          #File with the code to train a can model.
+|   │   |   │   test.py                           #File with the code to test a can model.
+|   |   |   |   dataset.py                        #File with the code with the data loader. We do not use this file directly.
+|   |   |   |   image.py                          #This code contains is in charge of modifying the images we use. We do not use this file directly.
+|   |   |   |   utils.py                          #Several tools we use in the training process. We do not use this file directly.
+|   |   |   |   model.py                          #The code contains the model. We do not use this file directly.
+|   |   |   
+|   |   └───CSRNet                                #Folder that contains the code to run CSRNet.
+|   │   |   │   train.py                          #File with the code to train a CSRNet model.
+|   │   |   │   test.py                           #File with the code to test a CSRNet model.
+|   |   |   |   dataset.py                        #File with the code with the data loader. We do not use this file directly.
+|   |   |   |   image.py                          #This code contains is in charge of modifying the images we use. We do not use this file directly.
+|   |   |   |   utils.py                          #Several tools we use in the training process. We do not use this file directly.
+|   |   |   |   model.py                          #The code contains the model. We do not use this file directly.
+|   |   |   
+|   |   └───more models                           #We will place future models under this directory.
 |   |
-|   └───utils                                     #
-|       |   creation_density_maps.py              #
-|       |   json_files_creator.py                 #
+|   └───utils                                     #This folder contains tools to train density-based models.
+|       |   creation_density_maps.py              #Code to create the ground truth density maps.
+|       |   json_files_creator.py                 #Code to create the .json file with the path of the images we want to use for training, testing, and validation.
 |
 └───datasets                                      #Folder where we save the datasets.
 |   │   ...
 |   └───dataset_A                                 #Dataset folder. Each dataset has to have a folder.
-|       |   json_test_set.json                    #COCO JSON annotation file of the testing images.
-|       |   json_train_set.json                   #COCO JSON annotation file of the training images.
-|       |   json_val_set.json                     #COCO JSON annotation file of the validation images.
-|       └───all                                   #Folder where we place the images.
-|           | img_1.png
-|           | img_2.png
+|       |   density_test_list.json                #.json file that contains a list of the paths of the testing images.
+|       |   density_train_list.json               #.json file that contains a list of the paths of the training images.
+|       |   density_val_list.json                 #.json file that contains a list of the paths of the validation images.
+|       └───all                                   #Folder where we place the images and the ground truth density maps.
+|           | img_1.png                           #Image we are using
+|           | img_1.h5                            #ground truth density map
+|           | img_2.png                           #""
+|           | img_2.h5                            #""
 |           | ...
 |   
 └───saved_models                                  #Folder where we save the models.
     |   ...
-    └───faster_cnn                                
+    └───can                                       #Folder where we save the models as a result the can training process.
+    |   |   ...
+    |   └───dataset_A                             #Folder where we save the models we trained using dataset A.
+    |       └───best_model.pth                    #Model we get from training for can.
+    |
+    └───CSRNet
         |   ...
         └───dataset_A                             #Folder where we save the models we trained using dataset A.
-            └───best_model.pth                    #Model we get from training.
+            └───best_model.pth                    #Model we get from training for CSRNet.
+
 
 ```
 
