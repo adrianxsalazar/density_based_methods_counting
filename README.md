@@ -21,6 +21,11 @@ Currently, we covered the following methodologies. We will add more density-base
  <li>Multi column crowd counting (MCNN) (Soon). Based on the paper <\li>
 </ul>
 
+<img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/can.png"/>
+
+<img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/crsnet.png" />
+
+Here
 <h4> Directory structure. </h4>
 
 To run the presented implementations, we have to set up the following directory structure in our project directory.
@@ -87,9 +92,7 @@ project                                           #Project folder. Typically we 
 
 
 To run the presented implementations, it is nece
-<img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/can.png"/>
 
-<img src="https://github.com/adrianxsalazar/density_based_methods_counting/blob/master/readme_images/crsnet.png" />
 ```
 
 $
